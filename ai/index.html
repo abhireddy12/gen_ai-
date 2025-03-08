@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🌍 AI Multi-Language Translator</h1>
+
+    <div class="container">
+        <label for="inputLanguage">Input Language:</label>
+        <select id="inputLanguage"></select>
+
+        <label for="outputLanguage">Output Language:</label>
+        <select id="outputLanguage"></select>
+
+        <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
+        <button onclick="translateText()">
+            <img src="C:\Users\badda\Searches\ai\images\translator.png" width="20"> Translate
+        </button>
+        
+        <button onclick="speakText()">
+            <img src="C:\Users\badda\Searches\ai\images\speak.png" width="20"> Speak
+        </button>
+
+        <h2>Translated Output:</h2>
+        <p id="outputText"></p>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
